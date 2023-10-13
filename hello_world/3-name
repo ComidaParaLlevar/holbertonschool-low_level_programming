@@ -1,2 +1,2 @@
 #!/bin/bash
-gcc -c > -m 751 cisfun
+gcc -c $CFILE | touch -m 751 cisfun

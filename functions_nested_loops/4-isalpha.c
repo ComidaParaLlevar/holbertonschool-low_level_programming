@@ -1,6 +1,6 @@
 #include "main.h"
 /**
- *_islower- checks for upper case characters
+ *_isalpha- checks for upper case characters
  *
  *@c: is the character that need to be checked
  *
@@ -9,15 +9,9 @@
 
 int _isalpha(int c)
 {
-
-	int i;
-
-for (i = 65 ; i <= 90 ; i++)
-{
-	if (i == c)
+	if ((c >= 65 && c <= 90) || (c >= 97 && c <= 122))
 	{
 		return (1);
 	}
-}
 return (0);
 }

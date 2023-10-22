@@ -1,6 +1,6 @@
 #include "main.h"
 /**
- *print_numbers- prints numbers 0 to 9
+ *print_most_numbers- prints numbers 0 to 9, except 2 & 4
  *Return: void
  *
  */
@@ -14,8 +14,11 @@ void print_most_numbers(void)
 		if ((a == 2) && (a == 4))
 		{
 			continue;
-			_putchar(a + '0');
+			
 		}
+		else
+		{
+			_putchar(a + '0');
 	}
 	_putchar('\n');
 }

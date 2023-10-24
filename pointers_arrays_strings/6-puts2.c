@@ -9,11 +9,10 @@ void puts2(char *str)
 
 	while (str[c] != '\0')
 	{
-		if (c % 10 != 0)
+		if (c % 2 == 0)
 		{
-			c++;
+			_putchar(str[c]);
 		}
-	_putchar(str[c]);
 	c++;
 	}
 _putchar('\n');

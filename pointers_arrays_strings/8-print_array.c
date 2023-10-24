@@ -30,5 +30,5 @@ void print_array(int *a, int n)
 			n++;
 		}
 	}
-printf("%c", '\n');
+printf("\n");
 }

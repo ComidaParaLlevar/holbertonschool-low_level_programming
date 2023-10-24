@@ -5,7 +5,7 @@
  *Return: void
  */
 
-void _puts(char *str)
+void _puts(char *sts)
 {
 	int c = 0;
 

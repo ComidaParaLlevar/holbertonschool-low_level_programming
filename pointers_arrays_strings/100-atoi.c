@@ -11,12 +11,21 @@ int _atoi(char *s)
 	unsigned int num = 0;
 	unsigned int pos = 1;
 
-	while (s[c])
+	while ((s[c] < '0' || s[c] > '9') && (s[c] != '\0'))
 	{
 		if (s[c] == '-')
 		{
 			pos *= -1;
+			c++;
 		}
+		else
+		{
+			c++;
+		}
+	}
+
+	while (s[c])
+	{
 		if (s[c] >= '0' && s[c] <= '9')
 		{
 			while (s[c] >= '0' && s[c] <= '9')
@@ -26,7 +35,9 @@ int _atoi(char *s)
 			}
 		}
 		else
+		{
 			c++;
+		}
 	}
 
 return (num * pos);

@@ -24,7 +24,6 @@ int _atoi(char *s)
 			num = (num * 10) + (s[c] - '0');
 			c++;
 			}
-			
 		}
 		else
 			c++;

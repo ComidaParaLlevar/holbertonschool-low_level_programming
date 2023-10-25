@@ -34,6 +34,10 @@ int _atoi(char *s)
 			c++;
 			}
 		}
+		else if (num > 0)
+		{
+			break;
+		}
 		else
 		{
 			c++;

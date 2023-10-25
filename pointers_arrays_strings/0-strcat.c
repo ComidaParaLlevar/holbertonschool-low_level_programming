@@ -3,7 +3,7 @@
  *_strcat- concatenates two strings
  *@dest: destination of string, contains first string
  *@src: source of second string
- *return: concatenated strings char type
+ *Return: dest concatenated string
  */
 
 char *_strcat(char *dest, char *src)
@@ -15,8 +15,6 @@ char *_strcat(char *dest, char *src)
 	{
 		c++;
 	}
-	
-	
 
 	while (src[d])
 	{

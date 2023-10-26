@@ -17,11 +17,12 @@ char *_strncat(char *dest, char *src, int n)
 		c++;
 	}
 
-	while (dest[c] < n && dest[c] != '\0')
+	while (n > 0 && dest[c] != '\0')
 	{
 		dest[c] = src[d];
 		c++;
 		d++;
+		n--;
 	}
 	if (dest[c] < n)
 	{

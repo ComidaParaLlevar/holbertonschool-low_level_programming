@@ -2,13 +2,13 @@
 /**
 *reverse_array - reverses string
 *@a: Array of integers
-*@n: Number of elements 
+*@n: Number of elements
 *Return: 0
 */
 void reverse_array(int *a, int n)
 {
-    int tmp;
-    int st;
+	int tmp;
+	int st;
 
 	for (st = n - 1; st >= n / 2; st--)
 	{

@@ -5,16 +5,16 @@
  * Return: upper case string
  */
 
-char *string_toupper(char *ptr)
+char *string_toupper(char *c)
 {
-	while (*ptr != '\0')
-	{
-		if (*ptr >= 'a' && *ptr <= 'z')
-		{
-			*ptr = *ptr - ' ';
-		}
-		ptr++;
-	}
+	int i;
 
-return (ptr);
+	i = 0;
+	while (c[i] != '\0')
+	{
+		if (c[i] >= 'a' && c[i] <= 'z')
+			c[i] -= ' ';
+		i++;
+	}
+	return (c);
 }

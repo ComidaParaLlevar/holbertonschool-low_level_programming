@@ -15,10 +15,6 @@ int _strcmp(char *s1, char *s2)
 	{
 		c++;
 	}
-	else
-	{
-		r = s1[c] - s2[c];
-		return (r);
-	}
-return (0);
+r = s1[c] - s2[c];
+return (r);
 }

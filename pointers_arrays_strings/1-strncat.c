@@ -23,8 +23,12 @@ char *_strncat(char *dest, char *src, int n)
 		c++;
 		d++;
 		n--;
+		if (n < dest[c])
+		{
+			break;
+		}
 	}
-	if (dest[c] >  n)
+	if (dest[c] <  n)
 	{
 		dest[c] = '\0';
 	}

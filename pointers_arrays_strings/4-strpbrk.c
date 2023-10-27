@@ -1,7 +1,7 @@
 #include "main.h"
 #include <stddef.h>
 /**
- *_strspn - search string for any set of bytes
+ *_strpbrk - search string for any set of bytes
  * @s: string
  * @accept: string with characters to take
  * Return: pointer from the selected character

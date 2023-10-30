@@ -1,5 +1,4 @@
 #include "main.h"
-#include <stddef.h>
 /**
  * _puts_recursion - prints a string with recursion, followed by new line
  * @s: string pointer

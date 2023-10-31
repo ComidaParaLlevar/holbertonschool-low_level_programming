@@ -1,9 +1,9 @@
 #include "main.h"
 /**
- * _pow_recursion - returns value of x to the power of y
+ * _pow_recursion - raises value of x to the power of y
  * @x: base number
  * @y: exponent number
- * Return product or -1 if negative number
+ * Return: product or -1 if negative number
  */
 
 int _pow_recursion(int x, int y)

@@ -9,15 +9,17 @@
 
 int main(int argc, char *argv[])
 {
+	int mul, num, num1;
+
 	if (argc < 3 || argc > 3)
 	{
 		printf("Error\n");
 		return (1);
 	}
 
-	int num = atoi(argv[1]);
-	int num1 = atoi(argv[2]);
-	int mul = num1 * num;
+	num = atoi(argv[1]);
+	num1 = atoi(argv[2]);
+	mul = num1 * num;
 
 	printf("%d\n", mul);
 	return (0);

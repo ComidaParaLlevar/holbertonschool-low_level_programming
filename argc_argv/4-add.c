@@ -17,12 +17,13 @@ int main(int argc, char *argv[])
 		printf("0\n");
 	}
 
-	for (i = 0; i < argc; i++)
+	for (i = 1; i < argc; i++)
 	{
 		int c;
+
 		for (c = 0; argv[i][c] != '\0'; c++)
 		{
-			if (argv[i][c] < 'a' || argv[i][c] > 'z')
+			if (argv[i][c] >= 'a' && argv[i][c] <= 'z')
 			{
 				printf("Error\n");
 				return (1);

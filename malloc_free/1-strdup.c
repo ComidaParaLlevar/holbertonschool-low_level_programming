@@ -35,7 +35,6 @@ char *_strdup(char *str)
 		ptr[c] = str[c];
 		c++;
 	}
-i++;
 ptr[i] = '\0';
 return (ptr);
 }

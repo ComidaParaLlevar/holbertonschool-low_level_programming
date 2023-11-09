@@ -18,23 +18,23 @@ char *_strdup(char *str)
 		return (NULL);
 	}
 
-	for (c = 0; str[c]; c++)
+	while (str[c])
 	{
-		i++;
+		c++;
 	}
 
-	ptr = (char *)malloc((i + 1) * sizeof(char));
+	ptr = (char *)malloc((c + 1) * sizeof(char));
 
 	if (str == NULL)
 	{
 		return (NULL);
 	}
 
-	for (c = 0; str[c]; c++)
+	for (i = 0; i <= c; i++)
 	{
-		ptr[c] = str[c];
+		ptr[i] = str[i];
 	}
-ptr[i] = '\0';
+
 return (ptr);
 }
 

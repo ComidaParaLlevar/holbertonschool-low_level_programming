@@ -23,18 +23,19 @@ char *_strdup(char *str)
 		c++;
 	}
 
-	ptr = (char *)malloc((c + 1) * sizeof(char));
+	ptr = (char *)malloc(sizeof(char) * (c + 1));
 
-	if (str == NULL)
+	if (ptr == NULL)
 	{
 		return (NULL);
 	}
 
-	for (i = 0; i <= c; i++)
+	while (i <= c)
 	{
 		ptr[i] = str[i];
+		i++;
 	}
-
+ptr[c] = '\0';
 return (ptr);
 }
 

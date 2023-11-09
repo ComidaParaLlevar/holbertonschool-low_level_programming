@@ -22,17 +22,19 @@ char *_strdup(char *str)
 	{
 		i++;
 	}
+
 	if (str == NULL)
 	{
 		return (NULL);
 	}
-	
+
 	while (c <= i)
 	{
 		ptr[c] = str[c];
 		c++;
 	}
-
+i++;
+ptr[i] = '\0';
 return (ptr);
 }
 

@@ -18,7 +18,7 @@ char *_strdup(char *str)
 		return (NULL);
 	}
 
-	while (str[i])
+	for (c = 0; str[c]; c++)
 	{
 		i++;
 	}
@@ -30,10 +30,9 @@ char *_strdup(char *str)
 		return (NULL);
 	}
 
-	while (c < i)
+	for (c = 0; str[c]; c++)
 	{
 		ptr[c] = str[c];
-		c++;
 	}
 ptr[i] = '\0';
 return (ptr);

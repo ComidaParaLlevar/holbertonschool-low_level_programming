@@ -26,10 +26,10 @@ char *string_nconcat(char *s1, char *s2, unsigned int n)
 	while (s2[l] != '\0')
 		l++;
 
-	if (n > l)
-		n = l;
+	if (l >= n)
+		l = n;
 
-	sum = c + n;
+	sum = c + l;
 
 	ptr = malloc(sum + 1);
 	if (ptr == NULL)
@@ -37,7 +37,6 @@ char *string_nconcat(char *s1, char *s2, unsigned int n)
 		return (NULL);
 	}
 
-	l = 0;
 	for (i = 0; i <= sum; i++)
 	{
 		if (i < c)

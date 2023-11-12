@@ -3,8 +3,9 @@
 
 /**
  * defines a function-like macro to find the absolute value of x number
+ * @x: interger to convert to absolute
  */
 
-#define ABS(x) ((x) < 0 ? (-x) : (x))
+#define ABS(x) (((x)) < 0 ? (-x) : (x))
 
 #endif

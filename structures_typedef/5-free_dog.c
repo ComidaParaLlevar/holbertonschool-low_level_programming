@@ -10,8 +10,8 @@
 
 void free_dog(dog_t *d)
 {
-	free((*canis).name);
-	free((*canis).owner);
-	free(canis);
+	free((*d).name);
+	free((*d).owner);
+	free(d);
 }
 

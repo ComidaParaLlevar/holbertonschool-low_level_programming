@@ -23,12 +23,11 @@ dog_t *new_dog(char *name, float age, char *owner)
 	{
 		nlen = _strlen(name) + 1;
 		olen = _strlen(owner) + 1;
-		
+
 		canis = malloc(sizeof(dog_t));
 
 		if (canis == NULL)
 		{
-			free(canis);
 			return (NULL);
 		}
 
@@ -59,7 +58,7 @@ dog_t *new_dog(char *name, float age, char *owner)
 
 /**
   * _strlen - Returns the length of string
-  * @s: String to count
+  * @l: String to count
   *
   * Return: String length
   */

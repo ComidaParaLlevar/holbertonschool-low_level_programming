@@ -1,5 +1,10 @@
 #include "dog.h"
 #include <stdlib.h>
+#include <stddef.h>
+
+int _strlen(char *l);
+char *_strcpy(char *dest, char *src);
+
 /**
  * new_dog - creates new dog struct
  * @name: name of dog

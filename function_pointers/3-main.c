@@ -23,7 +23,7 @@ int main(int argc, char *argv[])
 	op = argv[2];
 	arg3 = atoi(argv[3]);
 
-	if (!op)
+	if ((!op) || (op[1] != '\0'))
 	{
 		printf("Error\n");
 		exit(99);

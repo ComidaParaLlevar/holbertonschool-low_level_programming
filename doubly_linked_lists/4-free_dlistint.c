@@ -2,7 +2,7 @@
 /**
  * free_dlistint - frees allocated memory in list
  * @head: pointer to list
- * 
+ *
  * Return: void
  */
 

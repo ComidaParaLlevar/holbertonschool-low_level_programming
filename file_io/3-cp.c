@@ -15,18 +15,24 @@ int main(int argc, char *argv[])
 		dprintf(STDERR_FILENO, "Usage: cp file_from file_to\n"), exit(97);
 	fd_from = open(argv[1], O_RDONLY);
 	if (!argv[1] || fd_from == -1)
-		dprintf(STDERR_FILENO, "Error: Can't read from file %s\n", argv[1]), exit(98);
+	{
+		dprintf(STDERR_FILENO, "Error: Can't read from file %s\n", argv[1]);
+		exit(98);
+	}
 	fd_to = open(argv[2], O_WRONLY | O_CREAT | O_TRUNC, 0664);
 	while ((fdR = read(fd_from, buffer, 1024)) > 0)
 	{
 		if (write(fd_to, buffer, fdR) != fdR || fd_to == -1)
 		{
-			dprintf(STDERR_FILENO, "Error:Can't read from file %s\n", argv[1]);
+			dprintf(STDERR_FILENO, "Error: Can't write to file %s\n", argv[1]);
 			exit(99);
 		}
 	}
 	if (fdR == -1)
-		dprintf(STDERR_FILENO, "Error: Can't read form file %s\n", argv[1]), exit(98);
+	{
+		dprintf(STDERR_FILENO, "Error: Can't read from file %s\n", argv[1]);
+		exit(98);
+	}
 	if (close(fd_from) == -1)
 		dprintf(STDERR_FILENO, "Error: Can't close fd %d", fd_from), exit(100);
 	if (close(fd_to) == -1)

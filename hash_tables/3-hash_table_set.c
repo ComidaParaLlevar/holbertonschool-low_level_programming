@@ -30,7 +30,7 @@ int hash_table_set(hash_table_t *ht, const char *key, const char *value)
 			ht->array[index]->value = val_dup;
 			return (1);
 		}
-		index++
+		index++;
 	}
 	new_n = malloc(sizeof(hash_node_t));
 	if (new_n == NULL)

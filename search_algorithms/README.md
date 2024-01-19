@@ -1,0 +1,1 @@
+This repository applies 2 different search algorithms to various arrays
